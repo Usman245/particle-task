@@ -1,0 +1,149 @@
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 30px;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  background: transparent;
+  top: 30px;
+  position: relative;
+}
+
+.card {
+  border: 2px solid #cb0926;
+  width: 290px;
+  height: 615px;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  background: transparent;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  
+  z-index: 1;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card.popular {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.card.popular::before {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: -45px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #cb0926;
+  width: 101%; /* Match border color */
+  color: #fff;
+  padding: 14px 0px;
+  font-size: 16px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+
+  font-weight: bold;
+  z-index: 1; /* Ensure it sits above the card */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.section1 {
+  height: 37%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 52%;
+}
+hr {
+  margin: 20px -20px;
+  height: 2px;
+  background: #cb0926;
+  border: none;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-period {
+  font-size: 14px;
+}
+
+.card-button {
+  background: linear-gradient(90deg, #d90a2c 1.05%, #730000);
+  border: 0;
+  border-radius: 16px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 15px 24px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.5s ease-out;
+  z-index: 1;
+}
+
+.card-button:hover {
+  background: linear-gradient(90deg, #d30c2e 1.05%, #2f0101);
+}
+
+.card-features {
+  text-align: left;
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.card-features li {
+  margin-bottom: 8px;
+}
+
+.see-features {
+  display: block;
+  color: #d90a2c;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.see-features:hover {
+  text-decoration: underline;
+}
+@media (max-width: 690px) {
+  .card{
+    width: -webkit-fill-avilable;
+  }
+}

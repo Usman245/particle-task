@@ -1,0 +1,102 @@
+/* Container */
+.pricing-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    
+    font-family: Arial, sans-serif;
+    
+  }
+  .title-container{
+text-align: center;
+  }
+  .pricing-title {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Header Row */
+  .pricing-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .pricing-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .pricing-column span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .pricing-button {
+    background-color: #CB0926;
+    color: #fff;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pricing-button:hover {
+    background-color: #333;
+  }
+  
+  /* Features Table */
+  .pricing-features {
+    border-top: 1px solid #ddd;
+  }
+  
+  .feature-row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+  }
+  
+  .feature-name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    color: white;
+  }
+  
+  .feature-check {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: green;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pricing-header {
+      flex-direction: column;
+    }
+  
+    .feature-row {
+      flex-direction: column;
+    }
+  
+    .feature-name,
+    .feature-check {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+  
